@@ -89,12 +89,12 @@ function SubmitForm() {
                             <div className="Input">
                                 <label >Origin</label>
 
-                                <div className="inputField" type='text'><div className='originIcon'></div>{isLoaded && <Autocomplete  ><input name="origin" placeholder="Origin" ref={originRef}></input></Autocomplete>}</div>
+                                <div className="inputField" type='text'><div className='originIcon'></div> <Autocomplete  ><input name="origin" placeholder="Origin" ref={originRef}></input></Autocomplete></div>
                             </div>
 
                             <div className="Input" >
                                 <label>Stop</label>
-                                <div className="inputField" type='text'><div className='stopIcon' ></div>{isLoaded && <Autocomplete ><input name="stop" placeholder="Stop" ref={stopRef} ></input></Autocomplete>}</div>
+                                <div className="inputField" type='text'><div className='stopIcon' ></div> <Autocomplete ><input name="stop" placeholder="Stop" ref={stopRef} ></input></Autocomplete></div>
                             </div>
                             { 
                                stopInput.map((item,idex)=>{
@@ -106,7 +106,7 @@ function SubmitForm() {
                             
                             <div className="Input" >
                                 <label>Destination</label>
-                                <div className="inputField" type='text'><FmdGoodIcon />{isLoaded && <Autocomplete><input name="destination" placeholder="Destination" ref={destiantionRef}></input></Autocomplete>}</div>
+                                <div className="inputField" type='text'><FmdGoodIcon />  <Autocomplete><input name="destination" placeholder="Destination" ref={destiantionRef}></input></Autocomplete></div>
                             </div>
                             
                         </div>
