@@ -7,12 +7,14 @@ import { useJsApiLoader, GoogleMap, MarkerF, Autocomplete, DirectionsRenderer } 
 import { duration } from '@mui/material';
 import Stop from '../Stop/Stop';
 import AddCircleOutlineIcon from '@mui/icons-material/AddCircleOutline';
+const libraries = (process.env.REACT_APP_GOOGLE_LIBRARIES || '').split(',')
 function SubmitForm() {
     const center = { lat: 48.8584, lng: 2.2945 }
     const { isLoaded = true } = useJsApiLoader({
         googleMapsApiKey: process.env.REACT_APP_GOOGLE_MAP_KEY,
-        libraries: ['places']
+        libraries: libraries,
     })
+    
     const [directionsResponse, setDirectionResponse] = useState(null)
     const [distance, setDistance] = useState(null)
     const [duaration, setDuration] = useState(null)
