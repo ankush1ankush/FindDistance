@@ -9,7 +9,7 @@ import Stop from '../Stop/Stop';
 import AddCircleOutlineIcon from '@mui/icons-material/AddCircleOutline';
 function SubmitForm() {
     const center = { lat: 48.8584, lng: 2.2945 }
-    const { isLoaded } = useJsApiLoader({
+    const { isLoaded = true } = useJsApiLoader({
         googleMapsApiKey: process.env.REACT_APP_GOOGLE_MAP_KEY,
         libraries: ['places']
     })
