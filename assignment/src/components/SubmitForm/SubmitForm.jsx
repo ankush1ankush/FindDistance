@@ -11,8 +11,8 @@ const libraries = (process.env.REACT_APP_GOOGLE_LIBRARIES || '').split(',')
 function SubmitForm() {
     const center = { lat: 48.8584, lng: 2.2945 }
     const { isLoaded = true } = useJsApiLoader({
-        googleMapsApiKey: "AIzaSyDtK4eWhcQoi3n8O9wMKRkqIXZdshs1Ee4",
-        libraries: ["places"]
+        googleMapsApiKey: process.env.REACT_APP_GOOGLE_MAP_KEY,
+        libraries: libraries,
     })
     
     const [directionsResponse, setDirectionResponse] = useState(null)
