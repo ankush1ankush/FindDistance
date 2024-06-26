@@ -291,9 +291,13 @@ p {
     flex-direction: column-reverse;
     align-items: center;
     margin-top: 10px;
+    padding-bottom: 10px;
   }
   .InputForm {
     margin-right: 0;
+  }
+  .Input {
+    margin-top: 20px;
   }
 }
 
