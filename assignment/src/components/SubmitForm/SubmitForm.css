@@ -291,6 +291,24 @@ p {
     flex-direction: column-reverse;
     align-items: center;
     margin-top: 10px;
+   }
+   .InputForm{
+     margin-right: 0;
+   }
+  
+}
+
+@media only screen and (max-width: 600px) {
+  .mapContainer{
+     width: 350px;
+     height: 350px;
+  }
+  .submitForm{
+    padding-bottom: 10px;
+  }
+  .calculation{
+    width:300px
+=======
     padding-bottom: 10px;
   }
   .InputForm {
