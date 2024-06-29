@@ -1,21 +1,12 @@
 .App {
   text-align: center;
- background-color: #f0f9fa;
- min-height: 100vh;
- min-width: 100%;
+  background-color: #f0f9fa;
+
+  min-width: 100%;
 }
-
-
-
-
-
-
 
 @media only screen and (max-width: 800px) {
- .topNavbar{
-  display: none,
- }
-
+  .topNavbar {
+    display: none;
+  }
 }
-
-
